@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(morgan('combined'));
 
 // Serve Static Files
-app.use(express.static('public'));
+app.use(express.static('docs'));
 
 // Handle Form Submission
 app.post('/submit-form', (req, res) => {
